@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>totalToN</title>
+</head>
+<body>
+    <label>input a number here</label>
+    <input type="text" id="inputN"> <br>
+    <button onclick="calTotal()" id="button" >click</button>
+    <p id="result"></p>
+</body>
+</html>
+
+<script>
+    function calTotal(){
+        var sum = 0;
+        var N = parseInt(document.getElementById("inputN").value);
+        for (let i = 0; i<=N; i++ ){
+            sum += i;
+            console.log()
+        }
+        document.getElementById("result").innerHTML = "total is " + sum;
+
+    }
+</script>
